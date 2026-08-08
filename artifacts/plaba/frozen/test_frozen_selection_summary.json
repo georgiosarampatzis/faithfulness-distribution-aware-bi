@@ -1,0 +1,31 @@
+{
+  "method": "Frozen selector-v2 and locked full-consistency guard. No references or SARI targets were read or computed.",
+  "examples": 110,
+  "candidate_rows": 330,
+  "semantic_model": "intfloat/e5-base-v2",
+  "feature_count": 35,
+  "selector_selected_counts": {
+    "beam4": 87,
+    "greedy": 22,
+    "concise": 1
+  },
+  "guard_selected_counts": {
+    "beam4": 80,
+    "concise": 2,
+    "greedy": 21,
+    "source_fallback": 7
+  },
+  "guard_fallback_count": 7,
+  "input_sha256": {
+    "beam4": "ff9e6d10ed1702d08ab55aa188e1c8fe2abaa4fbae52958ab29e6658d9405c06",
+    "greedy": "2f609fa758217905112e6e08e139a5e9476b6a4780c5e03c4ef05f6e6cfd59cb",
+    "concise": "b15514cc4493f613429baf4747f2d79dc17aa099b9126ca01de0d0078fe6a26f",
+    "selector_model": "b878de282153eeb7ddac1d9de2d939fe44e926100026555ba83506d699573cb7",
+    "selector_config": "d3f054835fc6aedfddde945892c2d4a5e3fa7bacaeaaebeeea84f10976c6930a"
+  },
+  "output_sha256": {
+    "features": "6fa424c0239e345045960fc06d4e97638dd692c36b6b262e8f6d887bc71d5bc7",
+    "selector_predictions": "522d35bea50fc1d56ecca9741a091c7dcec4a88fe9ae980c008e132c54e1e868",
+    "guard_predictions": "e19e0ceace9458d9401fef2d475b49f65cb67b67a7f7e7257abdc4253e30f80c"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "examples": 109,
+  "candidate_rows": 327,
+  "folds": 5,
+  "candidate_mean_per_example_sari": {
+    "beam4": 45.55745920516375,
+    "greedy": 44.36872411508558,
+    "concise": 38.924991557231294
+  },
+  "selected_counts": {
+    "beam4": 76,
+    "concise": 3,
+    "greedy": 30
+  },
+  "oracle_counts": {
+    "concise": 14,
+    "greedy": 18,
+    "beam4": 77
+  },
+  "mean_cross_validated_selected_sari": 45.944419626518865,
+  "mean_oracle_sari": 46.53894499417278,
+  "mean_oracle_regret": 0.5945253676539153,
+  "selected_copy_analysis": {
+    "exact_source_copies": 9,
+    "mean_source_similarity": 0.9723245747366154,
+    "median_source_similarity": 0.99079754601227,
+    "similarity_gte_0_99": 60,
+    "similarity_gte_0_95": 96,
+    "similarity_gte_0_90": 99
+  },
+  "methodological_note": "References create SARI targets only. All candidates of one example remain in the same fold; held-out selection uses reference-free features only."
+}

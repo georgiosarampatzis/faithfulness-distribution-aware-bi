@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Temporary / backup files
+*.bak
+*.tmp
+*~
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw datasets are not redistributed
+data/
+
+# Large generated model/cache artifacts
+*.safetensors
+*.npy
+*.bin
+checkpoint-*/

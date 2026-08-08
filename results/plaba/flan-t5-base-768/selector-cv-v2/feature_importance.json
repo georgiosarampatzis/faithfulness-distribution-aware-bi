@@ -1,0 +1,142 @@
+[
+  {
+    "feature": "token_jaccard",
+    "importance": 0.16460866790357837
+  },
+  {
+    "feature": "char_similarity",
+    "importance": 0.14503744805927662
+  },
+  {
+    "feature": "semantic_cosine",
+    "importance": 0.1044005979302823
+  },
+  {
+    "feature": "candidate_fkgl",
+    "importance": 0.07354237325957055
+  },
+  {
+    "feature": "repeated_trigram_ratio",
+    "importance": 0.06495393896701297
+  },
+  {
+    "feature": "word_length_ratio",
+    "importance": 0.062321214175543045
+  },
+  {
+    "feature": "source_fkgl",
+    "importance": 0.06222922358740091
+  },
+  {
+    "feature": "source_words",
+    "importance": 0.04470862840323154
+  },
+  {
+    "feature": "character_length_ratio",
+    "importance": 0.03772193277073176
+  },
+  {
+    "feature": "candidate_words",
+    "importance": 0.03727773427000811
+  },
+  {
+    "feature": "source_coverage",
+    "importance": 0.03513887818744474
+  },
+  {
+    "feature": "candidate_containment",
+    "importance": 0.03329653950961304
+  },
+  {
+    "feature": "readability_gain",
+    "importance": 0.03268836110785778
+  },
+  {
+    "feature": "candidate_is_concise",
+    "importance": 0.02764875570914246
+  },
+  {
+    "feature": "normalized_readability_gain",
+    "importance": 0.01559048693189989
+  },
+  {
+    "feature": "candidate_number_count",
+    "importance": 0.014283342759247806
+  },
+  {
+    "feature": "source_number_count",
+    "importance": 0.01388658347504372
+  },
+  {
+    "feature": "number_f1",
+    "importance": 0.007091428026266272
+  },
+  {
+    "feature": "number_recall",
+    "importance": 0.00675107594037101
+  },
+  {
+    "feature": "number_precision",
+    "importance": 0.004812214557094392
+  },
+  {
+    "feature": "candidate_is_beam4",
+    "importance": 0.0029810361448476532
+  },
+  {
+    "feature": "near_copy_099",
+    "importance": 0.002178312047558248
+  },
+  {
+    "feature": "exact_copy",
+    "importance": 0.001800143935660122
+  },
+  {
+    "feature": "near_copy_095",
+    "importance": 0.001678550695967472
+  },
+  {
+    "feature": "candidate_is_greedy",
+    "importance": 0.0014259924392037195
+  },
+  {
+    "feature": "near_copy_090",
+    "importance": 0.0008571813307822806
+  },
+  {
+    "feature": "negation_f1",
+    "importance": 0.00035471416594674496
+  },
+  {
+    "feature": "negation_count_difference",
+    "importance": 0.00024013262866690968
+  },
+  {
+    "feature": "negation_recall",
+    "importance": 0.00018410769196213582
+  },
+  {
+    "feature": "uncertainty_f1",
+    "importance": 0.00014049563001852466
+  },
+  {
+    "feature": "uncertainty_count_difference",
+    "importance": 6.128516890792106e-05
+  },
+  {
+    "feature": "uncertainty_recall",
+    "importance": 4.9238372138106285e-05
+  },
+  {
+    "feature": "terminal_punctuation",
+    "importance": 3.9585662768068415e-05
+  },
+  {
+    "feature": "negation_precision",
+    "importance": 1.9798554954933623e-05
+  },
+  {
+    "feature": "uncertainty_precision",
+    "importance": 0.0
+  }
+]

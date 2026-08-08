@@ -1,0 +1,218 @@
+{
+  "note": "This is development-set policy selection. Candidate quality predictions are cross-validated. References are used only for held-out evaluation and source-fallback SARI. Lock one policy before applying the final trained selector to the untouched test set.",
+  "policies": {
+    "sari_only": {
+      "examples": 109,
+      "mean_heldout_sari": 45.94441962651886,
+      "selected_counts": {
+        "beam4": 76,
+        "concise": 3,
+        "greedy": 30
+      },
+      "fallback_count": 0,
+      "copy_analysis": {
+        "exact_source_copies": 9,
+        "mean_source_similarity": 0.9723245747366153,
+        "median_source_similarity": 0.99079754601227,
+        "similarity_gte_0_99": 60,
+        "similarity_gte_0_95": 96,
+        "similarity_gte_0_90": 99
+      },
+      "reliability_proxies": {
+        "unsupported_number_violations": 10,
+        "number_omission_violations": 20,
+        "negation_consistency_violations": 1,
+        "uncertainty_consistency_violations": 6,
+        "mean_semantic_cosine": 0.9960752042061692
+      },
+      "mean_readability_gain_fkgl": 0.22572794649266906
+    },
+    "number_precision_guard": {
+      "examples": 109,
+      "mean_heldout_sari": 46.09438438009098,
+      "selected_counts": {
+        "beam4": 74,
+        "source_fallback": 8,
+        "greedy": 25,
+        "concise": 2
+      },
+      "fallback_count": 8,
+      "copy_analysis": {
+        "exact_source_copies": 17,
+        "mean_source_similarity": 0.977394871013542,
+        "median_source_similarity": 0.9924297924297925,
+        "similarity_gte_0_99": 68,
+        "similarity_gte_0_95": 98,
+        "similarity_gte_0_90": 101
+      },
+      "reliability_proxies": {
+        "unsupported_number_violations": 0,
+        "number_omission_violations": 13,
+        "negation_consistency_violations": 1,
+        "uncertainty_consistency_violations": 6,
+        "mean_semantic_cosine": 0.9965730883659573
+      },
+      "mean_readability_gain_fkgl": 0.19946748712751738
+    },
+    "number_and_negation_guard": {
+      "examples": 109,
+      "mean_heldout_sari": 46.200397227866674,
+      "selected_counts": {
+        "beam4": 73,
+        "source_fallback": 9,
+        "greedy": 25,
+        "concise": 2
+      },
+      "fallback_count": 9,
+      "copy_analysis": {
+        "exact_source_copies": 18,
+        "mean_source_similarity": 0.9786949630977139,
+        "median_source_similarity": 0.9925658026923849,
+        "similarity_gte_0_99": 69,
+        "similarity_gte_0_95": 99,
+        "similarity_gte_0_90": 102
+      },
+      "reliability_proxies": {
+        "unsupported_number_violations": 0,
+        "number_omission_violations": 13,
+        "negation_consistency_violations": 0,
+        "uncertainty_consistency_violations": 6,
+        "mean_semantic_cosine": 0.9965817315862813
+      },
+      "mean_readability_gain_fkgl": 0.19843436118636998
+    },
+    "number_negation_uncertainty_precision_guard": {
+      "examples": 109,
+      "mean_heldout_sari": 46.205609974205196,
+      "selected_counts": {
+        "beam4": 73,
+        "source_fallback": 9,
+        "greedy": 24,
+        "concise": 3
+      },
+      "fallback_count": 9,
+      "copy_analysis": {
+        "exact_source_copies": 18,
+        "mean_source_similarity": 0.977831781668381,
+        "median_source_similarity": 0.9925658026923849,
+        "similarity_gte_0_99": 69,
+        "similarity_gte_0_95": 99,
+        "similarity_gte_0_90": 102
+      },
+      "reliability_proxies": {
+        "unsupported_number_violations": 0,
+        "number_omission_violations": 13,
+        "negation_consistency_violations": 0,
+        "uncertainty_consistency_violations": 6,
+        "mean_semantic_cosine": 0.996533984437995
+      },
+      "mean_readability_gain_fkgl": 0.20267400470896707
+    },
+    "full_consistency_guard": {
+      "examples": 109,
+      "mean_heldout_sari": 46.37560108779808,
+      "selected_counts": {
+        "beam4": 72,
+        "source_fallback": 13,
+        "greedy": 24
+      },
+      "fallback_count": 13,
+      "copy_analysis": {
+        "exact_source_copies": 22,
+        "mean_source_similarity": 0.9857306134512585,
+        "median_source_similarity": 0.9931153184165232,
+        "similarity_gte_0_99": 73,
+        "similarity_gte_0_95": 102,
+        "similarity_gte_0_90": 105
+      },
+      "reliability_proxies": {
+        "unsupported_number_violations": 0,
+        "number_omission_violations": 10,
+        "negation_consistency_violations": 0,
+        "uncertainty_consistency_violations": 0,
+        "mean_semantic_cosine": 0.9972196954105972
+      },
+      "mean_readability_gain_fkgl": 0.17043336195421235
+    },
+    "full_guard_semantic_0.98": {
+      "examples": 109,
+      "mean_heldout_sari": 46.38828300801985,
+      "selected_counts": {
+        "beam4": 72,
+        "source_fallback": 14,
+        "greedy": 23
+      },
+      "fallback_count": 14,
+      "copy_analysis": {
+        "exact_source_copies": 23,
+        "mean_source_similarity": 0.9863334654894463,
+        "median_source_similarity": 0.9932556713672593,
+        "similarity_gte_0_99": 74,
+        "similarity_gte_0_95": 103,
+        "similarity_gte_0_90": 105
+      },
+      "reliability_proxies": {
+        "unsupported_number_violations": 0,
+        "number_omission_violations": 9,
+        "negation_consistency_violations": 0,
+        "uncertainty_consistency_violations": 0,
+        "mean_semantic_cosine": 0.9974707665793393
+      },
+      "mean_readability_gain_fkgl": 0.1652192642470296
+    },
+    "number_guard_nonexact_delta_0.25": {
+      "examples": 109,
+      "mean_heldout_sari": 46.09438438009098,
+      "selected_counts": {
+        "beam4": 74,
+        "source_fallback": 8,
+        "greedy": 25,
+        "concise": 2
+      },
+      "fallback_count": 8,
+      "copy_analysis": {
+        "exact_source_copies": 17,
+        "mean_source_similarity": 0.977394871013542,
+        "median_source_similarity": 0.9924297924297925,
+        "similarity_gte_0_99": 68,
+        "similarity_gte_0_95": 98,
+        "similarity_gte_0_90": 101
+      },
+      "reliability_proxies": {
+        "unsupported_number_violations": 0,
+        "number_omission_violations": 13,
+        "negation_consistency_violations": 1,
+        "uncertainty_consistency_violations": 6,
+        "mean_semantic_cosine": 0.9965730883659573
+      },
+      "mean_readability_gain_fkgl": 0.19946748712751738
+    },
+    "number_negation_guard_nonexact_delta_0.25": {
+      "examples": 109,
+      "mean_heldout_sari": 46.200397227866674,
+      "selected_counts": {
+        "beam4": 73,
+        "source_fallback": 9,
+        "greedy": 25,
+        "concise": 2
+      },
+      "fallback_count": 9,
+      "copy_analysis": {
+        "exact_source_copies": 18,
+        "mean_source_similarity": 0.9786949630977139,
+        "median_source_similarity": 0.9925658026923849,
+        "similarity_gte_0_99": 69,
+        "similarity_gte_0_95": 99,
+        "similarity_gte_0_90": 102
+      },
+      "reliability_proxies": {
+        "unsupported_number_violations": 0,
+        "number_omission_violations": 13,
+        "negation_consistency_violations": 0,
+        "uncertainty_consistency_violations": 6,
+        "mean_semantic_cosine": 0.9965817315862813
+      },
+      "mean_readability_gain_fkgl": 0.19843436118636998
+    }
+  }
+}

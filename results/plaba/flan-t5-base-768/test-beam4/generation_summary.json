@@ -1,0 +1,9 @@
+{
+  "examples": 110,
+  "empty_predictions": 0,
+  "minimum_prediction_tokens": 211,
+  "mean_prediction_tokens": 403.8545454545455,
+  "median_prediction_tokens": 383.0,
+  "maximum_prediction_tokens": 671,
+  "predictions_file": "results/plaba/flan-t5-base-768/test-beam4/predictions.jsonl"
+}

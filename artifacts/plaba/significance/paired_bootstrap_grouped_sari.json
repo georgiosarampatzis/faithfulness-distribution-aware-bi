@@ -1,0 +1,86 @@
+{
+  "protocol": "Paired bootstrap resampling over grouped PLABA validation abstracts. Each bootstrap sample draws abstracts with replacement and preserves pairing across systems. The primary measure is per-abstract multi-reference SARI.",
+  "bootstrap_samples": 10000,
+  "seed": 42,
+  "systems": {
+    "beam4": {
+      "examples": 110,
+      "mean_grouped_sari": 46.594570339003795,
+      "standard_deviation_across_examples": 6.83952953241468,
+      "bootstrap_95_ci": {
+        "lower": 45.32037841718731,
+        "upper": 47.86798318455594
+      }
+    },
+    "selector_v2": {
+      "examples": 110,
+      "mean_grouped_sari": 46.13662373555264,
+      "standard_deviation_across_examples": 6.943920094091262,
+      "bootstrap_95_ci": {
+        "lower": 44.85642035952816,
+        "upper": 47.42067950621648
+      }
+    },
+    "full_consistency_guard": {
+      "examples": 110,
+      "mean_grouped_sari": 46.240112882492525,
+      "standard_deviation_across_examples": 7.1674872897995385,
+      "bootstrap_95_ci": {
+        "lower": 44.90973119907639,
+        "upper": 47.57199708021121
+      }
+    }
+  },
+  "comparisons": {
+    "selector_v2_minus_beam4": {
+      "system_a": "selector_v2",
+      "system_b": "beam4",
+      "mean_difference": -0.4579466034511565,
+      "bootstrap_95_ci": {
+        "lower": -0.9930045368982895,
+        "upper": -0.05623953056306164
+      },
+      "bootstrap_two_sided_pvalue_raw": 0.012398760123987601,
+      "wins": 6,
+      "losses": 12,
+      "ties": 92,
+      "significant_raw_0_05": true,
+      "holm_adjusted_pvalue": 0.037196280371962806,
+      "significant_holm_0_05": true
+    },
+    "full_consistency_guard_minus_beam4": {
+      "system_a": "full_consistency_guard",
+      "system_b": "beam4",
+      "mean_difference": -0.3544574565112693,
+      "bootstrap_95_ci": {
+        "lower": -1.1322675797946058,
+        "upper": 0.3240199187188435
+      },
+      "bootstrap_two_sided_pvalue_raw": 0.3481651834816518,
+      "wins": 11,
+      "losses": 14,
+      "ties": 85,
+      "significant_raw_0_05": false,
+      "holm_adjusted_pvalue": 0.6963303669633036,
+      "significant_holm_0_05": false
+    },
+    "full_consistency_guard_minus_selector_v2": {
+      "system_a": "full_consistency_guard",
+      "system_b": "selector_v2",
+      "mean_difference": 0.10348914693988727,
+      "bootstrap_95_ci": {
+        "lower": -0.4981276681092237,
+        "upper": 0.6279859604070709
+      },
+      "bootstrap_two_sided_pvalue_raw": 0.6587341265873413,
+      "wins": 6,
+      "losses": 3,
+      "ties": 101,
+      "significant_raw_0_05": false,
+      "holm_adjusted_pvalue": 0.6963303669633036,
+      "significant_holm_0_05": false
+    }
+  },
+  "multiple_comparison_correction": "Holm correction across the three predefined pairwise comparisons.",
+  "interpretation_note": "The full-consistency system includes deliberate source fallbacks. These are validation-set estimates and do not replace untouched test evaluation."
+}

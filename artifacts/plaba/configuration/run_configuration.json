@@ -1,0 +1,24 @@
+{
+  "model": "google/flan-t5-base",
+  "max_source_length": 768,
+  "max_target_length": 768,
+  "train_examples": 635,
+  "validation_examples": 138,
+  "train_batch_size": 4,
+  "eval_batch_size": 4,
+  "gradient_accumulation_steps": 4,
+  "effective_train_batch_size": 16,
+  "epochs": 5.0,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 20,
+  "seed": 42,
+  "gradient_checkpointing": false,
+  "bf16": true,
+  "truncation": {
+    "train_sources": 26,
+    "train_targets": 2,
+    "validation_sources": 7,
+    "validation_targets": 1
+  }
+}

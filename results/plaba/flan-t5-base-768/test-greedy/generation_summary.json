@@ -1,0 +1,9 @@
+{
+  "examples": 110,
+  "empty_predictions": 0,
+  "minimum_prediction_tokens": 62,
+  "mean_prediction_tokens": 336.7090909090909,
+  "median_prediction_tokens": 329.0,
+  "maximum_prediction_tokens": 671,
+  "predictions_file": "results/plaba/flan-t5-base-768/test-greedy/predictions.jsonl"
+}

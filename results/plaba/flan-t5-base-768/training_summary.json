@@ -1,0 +1,44 @@
+{
+  "best_checkpoint": "results/plaba/flan-t5-base-768/checkpoint-200",
+  "best_metric": 1.5721534490585327,
+  "best_model_directory": "results/plaba/flan-t5-base-768/best_model",
+  "training_metrics": {
+    "train_runtime": 211.8096,
+    "train_samples_per_second": 14.99,
+    "train_steps_per_second": 0.944,
+    "total_flos": 2587064099383296.0,
+    "train_loss": 6.916260042190552,
+    "epoch": 5.0
+  },
+  "best_validation_metrics": {
+    "eval_loss": 1.5721534490585327,
+    "eval_runtime": 2.9542,
+    "eval_samples_per_second": 46.713,
+    "eval_steps_per_second": 11.847,
+    "epoch": 5.0
+  },
+  "run_configuration": {
+    "model": "google/flan-t5-base",
+    "max_source_length": 768,
+    "max_target_length": 768,
+    "train_examples": 635,
+    "validation_examples": 138,
+    "train_batch_size": 4,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "effective_train_batch_size": 16,
+    "epochs": 5.0,
+    "learning_rate": 3e-05,
+    "weight_decay": 0.01,
+    "warmup_steps": 20,
+    "seed": 42,
+    "gradient_checkpointing": false,
+    "bf16": true,
+    "truncation": {
+      "train_sources": 26,
+      "train_targets": 2,
+      "validation_sources": 7,
+      "validation_targets": 1
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Candidate,N,Num-P fail,Neg-P fail,Neg-R fail,Unc-P fail,Unc-R fail,Any failure,Eligible
+Beam-4,110,6,0,1,2,0,8,102
+Greedy,110,8,2,2,2,0,12,98
+Concise beam,110,26,3,5,2,10,39,71
+All candidates,330,40,5,8,6,10,59,271

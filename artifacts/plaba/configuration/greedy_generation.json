@@ -1,0 +1,17 @@
+{
+  "data_file": "<PROJECT_ROOT>/data/plaba/processed/test_grouped.jsonl",
+  "model_dir": "<PROJECT_ROOT>/results/plaba/flan-t5-base-768/best_model",
+  "examples": 110,
+  "max_source_length": 768,
+  "max_new_tokens": 768,
+  "batch_size": 4,
+  "num_beams": 1,
+  "length_penalty": 1.0,
+  "do_sample": false,
+  "top_p": null,
+  "temperature": null,
+  "no_repeat_ngram_size": 0,
+  "early_stopping": false,
+  "seed": 42,
+  "dtype": "torch.bfloat16"
+}

@@ -1,0 +1,19 @@
+{
+  "system": "BM25Okapi",
+  "document_representation": "title + abstract",
+  "evaluation_split": "SciFact dev",
+  "total_claims": 300,
+  "evaluated_claims_with_gold_evidence": 188,
+  "corpus_documents": 5183,
+  "top_k_saved": 1000,
+  "mrr": 0.767522336517972,
+  "recall@1": 0.6737588652482269,
+  "recall@3": 0.8062943262411346,
+  "recall@5": 0.864804964539007,
+  "recall@10": 0.9091312056737589,
+  "recall@20": 0.9304078014184398,
+  "precision@10": 0.09680851063829785,
+  "ndcg@10": 0.7975370276347954,
+  "ndcg@20": 0.8029499065495098,
+  "map@1000": 0.7605857550317645
+}

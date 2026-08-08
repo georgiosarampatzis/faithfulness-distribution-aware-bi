@@ -1,0 +1,22 @@
+{
+  "system": "Reciprocal Rank Fusion",
+  "components": [
+    "BM25Okapi",
+    "intfloat/e5-base-v2"
+  ],
+  "rrf_k": 60,
+  "evaluation_split": "SciFact dev",
+  "total_claims": 300,
+  "evaluated_claims_with_gold_evidence": 188,
+  "top_k_saved": 1000,
+  "mrr": 0.8436881945970968,
+  "recall@1": 0.7468971631205675,
+  "recall@3": 0.8838652482269505,
+  "recall@5": 0.921099290780142,
+  "recall@10": 0.9540780141843972,
+  "recall@20": 0.9688829787234042,
+  "precision@10": 0.10212765957446807,
+  "ndcg@10": 0.8614528882576238,
+  "ndcg@20": 0.866325529952615,
+  "map@1000": 0.829078383870935
+}

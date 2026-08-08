@@ -1,0 +1,36 @@
+{
+  "system": "FLAN-T5-base 768/768, greedy",
+  "primary_row_level": {
+    "examples": 138,
+    "protocol": "PLABA-compatible row-level evaluation; repeated source/output for abstracts with multiple human adaptations",
+    "sari": 44.30489791487734,
+    "sacrebleu": 30.453613866892265,
+    "rouge1_f1": 59.28672239218651,
+    "rouge2_f1": 35.13876915220409,
+    "rougeL_f1": 50.596725809410756
+  },
+  "secondary_grouped_multireference": {
+    "examples": 109,
+    "protocol": "one prediction per PMID; all available references",
+    "sari": 44.36872411508557,
+    "sacrebleu": 34.153259864563516,
+    "rouge1_f1": 60.8378687625242,
+    "rouge2_f1": 37.16219944033399,
+    "rougeL_f1": 52.27825529681981
+  },
+  "copy_analysis": {
+    "examples": 109,
+    "exact_source_copies": 6,
+    "exact_source_copy_rate": 0.05504587155963303,
+    "similarity_gte_0_99": 33,
+    "similarity_gte_0_95": 64,
+    "similarity_gte_0_90": 72,
+    "mean_source_similarity": 0.8678843791642593,
+    "median_source_similarity": 0.9737045630317092,
+    "generation_token_cap": 768,
+    "outputs_at_generation_token_cap": 2,
+    "outputs_without_final_punctuation": 2,
+    "mean_output_source_word_ratio": 0.976160856496871,
+    "median_output_source_word_ratio": 0.9957264957264957
+  }
+}

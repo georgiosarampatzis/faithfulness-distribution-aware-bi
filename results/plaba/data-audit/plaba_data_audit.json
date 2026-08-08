@@ -1,0 +1,173 @@
+{
+  "model_tokenizer": "google/flan-t5-base",
+  "tokenizer_model_max_length": 512,
+  "splits": {
+    "train": {
+      "rows": 635,
+      "unique_pmids": 531,
+      "unique_questions": 53,
+      "unique_source_texts": 531,
+      "unique_target_texts": 635,
+      "duplicate_source_rows": 104,
+      "empty_sources": 0,
+      "empty_targets": 0,
+      "adaptation_versions": {
+        "1": 340,
+        "2": 295
+      },
+      "question_types": {
+        "B": 201,
+        "C": 434
+      },
+      "source_token_lengths_with_prompt": {
+        "count": 635,
+        "minimum": 133,
+        "mean": 422.33228346456696,
+        "median": 408.0,
+        "p90": 605.2,
+        "p95": 695.0,
+        "p99": 969.799999999999,
+        "maximum": 1228,
+        "over_256": 558,
+        "over_384": 360,
+        "over_512": 142,
+        "over_768": 20,
+        "over_1024": 3
+      },
+      "target_token_lengths": {
+        "count": 635,
+        "minimum": 73,
+        "mean": 350.948031496063,
+        "median": 338.0,
+        "p90": 525.4000000000001,
+        "p95": 605.0,
+        "p99": 731.2799999999997,
+        "maximum": 988,
+        "over_256": 476,
+        "over_384": 229,
+        "over_512": 77,
+        "over_768": 2,
+        "over_1024": 0
+      }
+    },
+    "val": {
+      "rows": 138,
+      "unique_pmids": 109,
+      "unique_questions": 11,
+      "unique_source_texts": 109,
+      "unique_target_texts": 138,
+      "duplicate_source_rows": 29,
+      "empty_sources": 0,
+      "empty_targets": 0,
+      "adaptation_versions": {
+        "1": 79,
+        "2": 59
+      },
+      "question_types": {
+        "B": 47,
+        "C": 91
+      },
+      "source_token_lengths_with_prompt": {
+        "count": 138,
+        "minimum": 156,
+        "mean": 431.42028985507244,
+        "median": 417.0,
+        "p90": 629.0,
+        "p95": 723.0000000000001,
+        "p99": 880.2399999999998,
+        "maximum": 930,
+        "over_256": 117,
+        "over_384": 81,
+        "over_512": 35,
+        "over_768": 5,
+        "over_1024": 0
+      },
+      "target_token_lengths": {
+        "count": 138,
+        "minimum": 103,
+        "mean": 350.2971014492754,
+        "median": 332.5,
+        "p90": 529.5999999999999,
+        "p95": 591.8000000000002,
+        "p99": 683.7599999999998,
+        "maximum": 1007,
+        "over_256": 104,
+        "over_384": 49,
+        "over_512": 17,
+        "over_768": 1,
+        "over_1024": 0
+      }
+    },
+    "test": {
+      "rows": 148,
+      "unique_pmids": 110,
+      "unique_questions": 11,
+      "unique_source_texts": 110,
+      "unique_target_texts": 148,
+      "duplicate_source_rows": 38,
+      "empty_sources": 0,
+      "empty_targets": 0,
+      "adaptation_versions": {
+        "1": 80,
+        "2": 68
+      },
+      "question_types": {
+        "B": 46,
+        "C": 102
+      },
+      "source_token_lengths_with_prompt": {
+        "count": 148,
+        "minimum": 113,
+        "mean": 388.27027027027026,
+        "median": 378.5,
+        "p90": 549.2,
+        "p95": 587.0,
+        "p99": 692.9100000000001,
+        "maximum": 715,
+        "over_256": 126,
+        "over_384": 70,
+        "over_512": 28,
+        "over_768": 0,
+        "over_1024": 0
+      },
+      "target_token_lengths": {
+        "count": 148,
+        "minimum": 54,
+        "mean": 329.3783783783784,
+        "median": 316.0,
+        "p90": 492.50000000000006,
+        "p95": 560.2000000000002,
+        "p99": 627.95,
+        "maximum": 651,
+        "over_256": 107,
+        "over_384": 41,
+        "over_512": 11,
+        "over_768": 0,
+        "over_1024": 0
+      }
+    }
+  },
+  "cross_split_overlap": {
+    "train_vs_val": {
+      "pmid_count": 0,
+      "source_text_count": 0,
+      "question_count": 0,
+      "example_pmids": [],
+      "example_questions": []
+    },
+    "train_vs_test": {
+      "pmid_count": 0,
+      "source_text_count": 0,
+      "question_count": 0,
+      "example_pmids": [],
+      "example_questions": []
+    },
+    "val_vs_test": {
+      "pmid_count": 0,
+      "source_text_count": 0,
+      "question_count": 0,
+      "example_pmids": [],
+      "example_questions": []
+    }
+  }
+}

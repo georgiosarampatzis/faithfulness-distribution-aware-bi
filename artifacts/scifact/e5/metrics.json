@@ -1,0 +1,22 @@
+{
+  "system": "E5 dense retrieval",
+  "model": "intfloat/e5-base-v2",
+  "document_representation": "query/passsage prefixes; title + abstract",
+  "similarity": "cosine via normalized dot product",
+  "evaluation_split": "SciFact dev",
+  "total_claims": 300,
+  "evaluated_claims_with_gold_evidence": 188,
+  "corpus_documents": 5183,
+  "embedding_dimension": 768,
+  "top_k_saved": 1000,
+  "mrr": 0.8296870799514158,
+  "recall@1": 0.7176418439716311,
+  "recall@3": 0.8868794326241134,
+  "recall@5": 0.9347517730496453,
+  "recall@10": 0.964627659574468,
+  "recall@20": 0.9856382978723405,
+  "precision@10": 0.10585106382978722,
+  "ndcg@10": 0.8580717597760524,
+  "ndcg@20": 0.8638624821938549,
+  "map@1000": 0.8209319299595635
+}

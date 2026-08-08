@@ -1,0 +1,4 @@
+comparison,system_a,system_b,mean_difference,ci_lower,ci_upper,raw_pvalue,holm_adjusted_pvalue,wins,losses,ties,significant_holm_0_05
+selector_v2_minus_beam4,selector_v2,beam4,0.38696042135510844,0.07316955171055055,0.7711356219609405,0.0091990800919908,0.0103989601039896,17,6,86,True
+full_consistency_guard_minus_beam4,full_consistency_guard,beam4,0.818141882634328,0.3253315071679993,1.384882081221747,0.00039996000399960006,0.0011998800119988001,20,9,80,True
+full_consistency_guard_minus_selector_v2,full_consistency_guard,selector_v2,0.43118146127921964,0.10520552553836474,0.8318574685517169,0.0051994800519948,0.0103989601039896,10,5,94,True
