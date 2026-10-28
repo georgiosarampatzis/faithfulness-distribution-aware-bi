@@ -69,3 +69,35 @@ Original SimpleText2024/BioCLEAR dataset files and full
 generated predictions are not redistributed in this
 metadata package. Evaluation metrics and scripts should
 be documented separately when available.
+
+## SimpleText2024 External Evaluation
+
+The repository includes metadata from the strict held-out
+SimpleText2024 evaluation of the frozen PLABA adaptation pipeline.
+
+Location:
+
+`artifacts/simpletext2024/`
+
+The released metadata includes:
+
+- Beam-4 generation configuration and summary.
+- Greedy generation configuration and summary.
+- Concise generation configuration and summary.
+- Frozen selector and consistency-guard summary.
+- SHA-256 hashes of the original frozen inputs, selector
+  model, configuration, and generated outputs.
+
+The frozen evaluation processed 648 sentence inputs and
+generated 1,944 candidate adaptations.
+
+The selector and consistency guard were applied without
+reference access or dataset-specific tuning.
+
+The guard selected 592 Beam-4 outputs, 39 Greedy outputs,
+10 Concise outputs, and 7 original-source fallbacks.
+
+Original SimpleText2024/BioCLEAR dataset files and full
+generated predictions are not redistributed in this
+metadata package. Evaluation metrics and scripts should
+be documented separately when available.
