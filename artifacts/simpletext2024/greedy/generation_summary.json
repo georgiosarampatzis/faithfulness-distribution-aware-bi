@@ -1,0 +1,9 @@
+{
+  "examples": 648,
+  "empty_predictions": 0,
+  "minimum_prediction_tokens": 5,
+  "mean_prediction_tokens": 33.33796296296296,
+  "median_prediction_tokens": 30.0,
+  "maximum_prediction_tokens": 768,
+  "predictions_file": "results/simpletext2024/sentence-greedy/predictions.jsonl"
+}

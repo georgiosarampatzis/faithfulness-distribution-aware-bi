@@ -1,0 +1,9 @@
+{
+  "examples": 648,
+  "empty_predictions": 0,
+  "minimum_prediction_tokens": 15,
+  "mean_prediction_tokens": 38.81481481481482,
+  "median_prediction_tokens": 36.0,
+  "maximum_prediction_tokens": 113,
+  "predictions_file": "results/simpletext2024/sentence-concise/predictions.jsonl"
+}

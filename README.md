@@ -1,8 +1,8 @@
-# Faithfulness-Aware Evidence-to-Insight Framework
+# Faithfulness- and Distribution-Aware Text Analytics for Business Intelligence: From Evidence Retrieval to Plain-Language Adaptation
 
-Anonymous reproducibility repository accompanying the manuscript:
+Reproducibility repository accompanying the manuscript:
 
-**From Complex Evidence to Accessible Business Insights: A Faithfulness-Aware Framework for Retrieval and Plain-Language Adaptation**
+**Faithfulness- and Distribution-Aware Text Analytics for Business Intelligence: From Evidence Retrieval to Plain-Language Adaptation**
 
 ## Overview
 
@@ -45,11 +45,11 @@ These deterministic checks are consistency indicators and do not establish compl
 
 ## Model Weights
 
-Large fine-tuned FLAN-T5 checkpoint files are not included in the anonymous review repository. Configuration metadata, metrics, selector artifacts and frozen hashes are retained.
+Large fine-tuned FLAN-T5 checkpoint files are not included in the reproducibility repository. Configuration metadata, metrics, selector artifacts and frozen hashes are retained.
 
 ## Anonymity
 
-Author-identifying information has been removed for double-blind peer review.
+The manuscript was submitted to Information (MDPI) with author attribution.
 
 ## Reproduction
 
@@ -349,3 +349,24 @@ Large model checkpoints, cached embedding matrices, temporary files, and executi
 Raw datasets are not redistributed where redistribution is restricted by their original licenses. They must be obtained from their original sources and placed under the corresponding `data/` directories before running the pipelines.
 
 Randomized stages use seed `42`. Neural experiments require a CUDA-capable GPU.
+
+## Held-Out External Evaluation: SimpleText2024
+
+The accompanying manuscript additionally evaluates the
+frozen PLABA adaptation pipeline on SimpleText2024,
+using evaluation material distributed through BioCLEAR.
+
+The evaluation comprises 103 source documents and
+648 sentence inputs, including 578 referenced sentence
+instances used for the primary sentence-level evaluation.
+
+The FLAN-T5-base checkpoint, decoding configurations,
+35-feature Random Forest selector, and consistency
+policy are transferred without additional training,
+parameter tuning, or threshold modification.
+
+This experiment assesses cross-dataset robustness
+rather than an official SimpleText shared-task submission.
+
+External-transfer artifacts should be documented separately
+when included in the repository.

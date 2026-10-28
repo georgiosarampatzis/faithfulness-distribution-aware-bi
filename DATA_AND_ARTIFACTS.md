@@ -22,7 +22,7 @@ Generated prediction text is excluded from the sanitized per-example release whe
 
 ## Large Model Files
 
-Fine-tuned FLAN-T5 model weights and intermediate checkpoints are excluded from the anonymous review repository because of their size.
+Fine-tuned FLAN-T5 model weights and intermediate checkpoints are excluded from the reproducibility repository because of their size.
 
 Configuration metadata, evaluation outputs, selector artifacts, and frozen hashes required to audit the reported experiments are retained.
 
@@ -30,10 +30,42 @@ Configuration metadata, evaluation outputs, selector artifacts, and frozen hashe
 
 SHA-256 values associated with the frozen PLABA candidate files are stored under artifacts/plaba/frozen/.
 
-Original local absolute paths appearing in experiment records were replaced with the neutral placeholder <PROJECT_ROOT> for anonymous review.
+Original local absolute paths appearing in experiment records were replaced with the neutral placeholder <PROJECT_ROOT> for portability and reproducibility.
 
 This path sanitization does not alter reported experimental values or the recorded hashes of the original frozen candidate files.
 
-## Double-Blind Review
+## Reproducibility and Metadata
 
-Author identities, institutional information, email addresses, server names, and local user paths have been removed from the anonymous repository.
+Machine-specific paths and identifying environment metadata were sanitized during artifact preparation. The repository identifies the manuscript authors.
+
+## SimpleText2024 External Evaluation
+
+The repository includes metadata from the strict held-out
+SimpleText2024 evaluation of the frozen PLABA adaptation pipeline.
+
+Location:
+
+`artifacts/simpletext2024/`
+
+The released metadata includes:
+
+- Beam-4 generation configuration and summary.
+- Greedy generation configuration and summary.
+- Concise generation configuration and summary.
+- Frozen selector and consistency-guard summary.
+- SHA-256 hashes of the original frozen inputs, selector
+  model, configuration, and generated outputs.
+
+The frozen evaluation processed 648 sentence inputs and
+generated 1,944 candidate adaptations.
+
+The selector and consistency guard were applied without
+reference access or dataset-specific tuning.
+
+The guard selected 592 Beam-4 outputs, 39 Greedy outputs,
+10 Concise outputs, and 7 original-source fallbacks.
+
+Original SimpleText2024/BioCLEAR dataset files and full
+generated predictions are not redistributed in this
+metadata package. Evaluation metrics and scripts should
+be documented separately when available.

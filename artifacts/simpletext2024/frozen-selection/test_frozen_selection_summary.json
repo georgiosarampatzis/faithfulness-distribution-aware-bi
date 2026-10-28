@@ -1,0 +1,31 @@
+{
+  "method": "Frozen selector-v2 and locked full-consistency guard. No references or SARI targets were read or computed.",
+  "examples": 648,
+  "candidate_rows": 1944,
+  "semantic_model": "intfloat/e5-base-v2",
+  "feature_count": 35,
+  "selector_selected_counts": {
+    "beam4": 600,
+    "greedy": 39,
+    "concise": 9
+  },
+  "guard_selected_counts": {
+    "beam4": 592,
+    "greedy": 39,
+    "source_fallback": 7,
+    "concise": 10
+  },
+  "guard_fallback_count": 7,
+  "input_sha256": {
+    "beam4": "d3fa0279f25b908fe672bdf23f9f47a840fc0150fa8f01bf0d5164ed8c3b0d65",
+    "greedy": "1b23aa7c603b4b04104b680878eef25d1b071fc786514779a2510fc3574d5e83",
+    "concise": "9ab5b22acfa4ad0f84c8f39b9597bef0dc439904832184438d03e46b21ea29d9",
+    "selector_model": "b878de282153eeb7ddac1d9de2d939fe44e926100026555ba83506d699573cb7",
+    "selector_config": "d3f054835fc6aedfddde945892c2d4a5e3fa7bacaeaaebeeea84f10976c6930a"
+  },
+  "output_sha256": {
+    "features": "8f88ad2c414b31a2a3bdd61c3f1112bd2198013f1ec6afdabf31298fc5b4eb2e",
+    "selector_predictions": "6fbebaf6f2439d06320c6fab08b721a69acb6442da5d19b1ba812da1e8924485",
+    "guard_predictions": "47454ebb8381f4f4be9fa05bf726389711696135b4e006c7e9fb5b696b3c0756"
+  }
+}
