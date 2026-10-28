@@ -1,0 +1,29 @@
+{
+  "examples": 110,
+  "sample_size": 50,
+  "seed": 42,
+  "all_case_counts": {
+    "agreement_control": 84,
+    "guard_differs_from_beam4": 18,
+    "source_fallback": 7,
+    "selector_differs_from_beam4": 1
+  },
+  "sample_case_counts": {
+    "agreement_control": 24,
+    "source_fallback": 7,
+    "guard_differs_from_beam4": 18,
+    "selector_differs_from_beam4": 1
+  },
+  "fallback_candidate_failure_counts": {
+    "number_precision": 18,
+    "uncertainty_precision": 3,
+    "uncertainty_recall": 1,
+    "negation_recall": 2
+  },
+  "instructions": {
+    "preferred_output": "A, B, C, TIE, or NONE",
+    "ratings": "1=worst, 5=best",
+    "binary_errors": "1=yes, 0=no",
+    "blinding": "Keep manual_annotation_key.csv hidden until annotation is complete. Use the references sheet only for second-pass adjudication."
+  }
+}

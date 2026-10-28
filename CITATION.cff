@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software or its accompanying artifacts, please cite the associated article."
+title: "Reproducibility Package for Faithfulness- and Distribution-Aware Text Analytics for Business Intelligence"
+version: 1.0.0
+date-released: 2026-10-28
+authors:
+  - family-names: "Arampatzis"
+    given-names: "Georgios"
+  - family-names: "Arampatzis"
+    given-names: "Avi"
+license: "MIT"

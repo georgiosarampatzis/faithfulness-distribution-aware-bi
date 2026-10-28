@@ -1,0 +1,32 @@
+{
+  "system": "FLAN-T5-base 512/512, beam=4",
+  "primary_row_level": {
+    "examples": 148,
+    "protocol": "PLABA-compatible row-level evaluation; repeated source/output for abstracts with multiple human adaptations",
+    "sari": 45.98795572362018,
+    "sacrebleu": 33.77432560273564,
+    "rouge1_f1": 62.504755047855156,
+    "rouge2_f1": 38.92362649861288,
+    "rougeL_f1": 54.510523951256644
+  },
+  "secondary_grouped_multireference": {
+    "examples": 110,
+    "protocol": "one prediction per PMID; all available references",
+    "sari": 46.44779450917305,
+    "sacrebleu": 39.859642500812946,
+    "rouge1_f1": 64.9284595198952,
+    "rouge2_f1": 42.51041221501516,
+    "rougeL_f1": 57.531462438217844
+  },
+  "copy_analysis": {
+    "examples": 110,
+    "exact_source_copies": 18,
+    "exact_source_copy_rate": 0.16363636363636364,
+    "similarity_gte_0_99": 55,
+    "similarity_gte_0_95": 89,
+    "similarity_gte_0_90": 98,
+    "mean_source_similarity": 0.9435757065791323,
+    "median_source_similarity": 0.9900590561309207,
+    "outputs_at_512_token_cap": 19
+  }
+}
